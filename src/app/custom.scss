@@ -1,0 +1,29 @@
+$theme-colors: (
+  'primary': #093ea8,
+  'secondary': #3bd7ec,
+  'success': #22e11c,
+  'info': #d9ff50,
+  'warning': #ffbe0b,
+  'danger': #ff0000,
+  'light': #c0ccda,
+  'dark': #000103,
+);
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+
+.swiper{
+    &.customSwiper{
+        padding: $spacer 0;
+        .swiper-wrapper{
+            .swiper-slide{
+                height: auto;
+                .service-block{
+                    height: 100%; margin: 0;
+                    & .inner-box{
+                        height: 100%; display: flex; flex-direction: column;
+                        .read-more{margin-top: auto;}
+                    }
+                }
+            }
+        }
+    }
+}
